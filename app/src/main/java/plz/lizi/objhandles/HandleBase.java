@@ -366,26 +366,5 @@ public final class HandleBase {
 
 	public static void main(String[] args) {
 		initINST(null);
-		
-		/*Test.hello();
-		Test.hello();
-		Test.hello();
-		Test.hello();
-		Test.hello();
-		
-		ClassHandle handle = new ClassHandle(Test.class);
-		try {
-			CtClass ctClass = ClassPool.getDefault().makeClassIfNew(new ByteArrayInputStream(handle.getBytes()));
-			ctClass.getDeclaredMethod("hello").insertBefore("{ System.out.println(\"hello world\"); return; }");
-			handle.redefine(ctClass.toBytecode());
-		} catch (Throwable e) {
-			e.printStackTrace();
-		}
-
-		Test.hello();
-		Test.hello();
-		Test.hello();
-		Test.hello();
-		Test.hello();*/
 	}
 }
